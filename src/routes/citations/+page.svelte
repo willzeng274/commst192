@@ -20,6 +20,7 @@
 		<p class="placeholder">{`[2] P. Vierci, Society of the Snow. Constable, 2023.`}</p>
 		<p class="placeholder">{`[3] “My Plane Crashed And I Survived 72 Days In The Andes | Minutes With,” www.youtube.com. https://www.youtube.com/watch?v=5aVI-5oZbDA`}</p>
 		<p class="placeholder">{`[4] C. Godfrey, “My plane crashed in the Andes. Only the unthinkable kept me and the other starving survivors alive,” The Guardian, Dec. 04, 2023. Accessed: Nov 20th. [Online]. Available: https://www.theguardian.com/world/2023/dec/04/nando-parrado-andes-plane-crash-1972-rugby-team`}</p>
+		<p class="placeholder">{`[5] F. Marshall, “Alive,” Buena Vista Pictures. 1993.`}</p>
 	</div>
 </div>
 
