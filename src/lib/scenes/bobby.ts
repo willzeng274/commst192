@@ -83,7 +83,7 @@ export const scenes: Record<number, Scene> = {
 		]
 	},
 	4: {
-		imgUrl: '/bob_s4.png',
+		imgUrl: '/end_without_people.png',
 		text: 'Bobby’s decision to join the expedition leads to his death in an avalanche. The group is left with fewer members, lost resources from the failed expedition and lowered morale knowing that he won’t be coming back. (Made up)',
 		choices: null
 	},
