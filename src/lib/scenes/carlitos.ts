@@ -59,7 +59,7 @@ export const scenes: Record<number, Scene> = {
 				modal_text: 'He decides to hoard resources along with Bobby Francois and they simply waste them in the vain hope that help is coming to get them.',
 				morale: -1,
 				health: 0,
-				survivor: 0,
+				survivor: -1,
 				next_scene: 9
 			},
 			{
@@ -74,7 +74,7 @@ export const scenes: Record<number, Scene> = {
 		]
 	}, 
 	4: {
-		imgUrl: 'carl_s4/.png',
+		imgUrl: '/carl_s4.png',
 		text: `After many days of harsh survival, Carlitos is still alive but many haven’t made it since. They are starting to feel a horrible hunger as their rations get scarcer and scarcer. 
 		
 		Carlitos is talking to Nando Parrado and he exclaims that “Entonces cortaré pedazos de carne de uno de los pilotos“, in response to him saying how it would be impossible to climb the mountain without sustenance.`,
@@ -118,7 +118,7 @@ export const scenes: Record<number, Scene> = {
 				imgUrl: '/carl_s5c2.png',
 				text: 'Don’t mention the birthday',
 				modal_text: 'They continue to survive in the cold airplane.',
-				morale: 0,
+				morale: -1,
 				health: 0,
 				survivor: 0,
 				next_scene: 6
@@ -143,8 +143,8 @@ export const scenes: Record<number, Scene> = {
 				text: 'Carlitos is tired so he decides to stay inside.',
 				modal_text: 'He stays inside, and doesn’t make the observation you can use the insulating material to make a sleeping bag.',
 				morale: 0,
-				health: 0,
-				survivor: 0,
+				health: -1,
+				survivor: -1,
 				next_scene: 11
 			}
 		]

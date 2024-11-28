@@ -65,7 +65,16 @@ export const scenes: Record<number, Scene> = {
 			{
 				imgUrl: '/bob_s3c2.png',
 				text: 'Bobby continues hoarding cigars and wine for himself', 
-				modal_text: 'Group tensions worsen as Bobby’s selfishness becomes a source of frustration and division. (Happened in reality)', 
+				modal_text: `Group tensions worsen as Bobby’s selfishness becomes a source of frustration and division. (Happened in reality)
+
+				From The Society of the Snow by Pablo Vierci:
+
+				"One day in the fuselage somebody hit me in the face and I asked him, without the slightest bit of anger:
+				'Was that on purpose or by accident?'.
+				'By accident', he answered.
+				'Oh OK' I said.
+				Daniel Fernandez is sure I would have responded exactly the same if he had said that the punch had been intentional - 'Oh OK'. And he reiterates that that attitude made the madness we all shared more tolerable."
+				`, 
 				morale: -1,
 				health: 0,
 				survivor: 0,

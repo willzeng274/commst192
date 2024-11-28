@@ -47,11 +47,14 @@
 </div>
 
 {#if showDialog && selectedChoice}
-	<div class="dialog-overlay" transition:fade>
-		<div class="dialog-content">
+	<div class="dialog-overlay overflow-y-scroll pt-20" transition:fade>
+		<div class="dialog-content min-w-[48rem]">
 			<img src={selectedChoice.imgUrl} alt="Choice" class="choice-image" />
-			<p class="choice-text">{selectedChoice.text}</p>
-			
+			<p class="choice-text text-center">{selectedChoice.text}</p>
+
+			<!-- a paragraph of text that respects new lines as line breaks, class name in tailwind -->
+			<p class="whitespace-pre-line text-lg">{selectedChoice.modal_text}</p>
+
 			<div class="metrics">
 				<div class="metric">
 					<Heart size={24} />
