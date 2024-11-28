@@ -7,7 +7,7 @@ export const scenes: Record<number, Scene> = {
 		choices: [
 			{
 				imgUrl: '/bob_s1c1.png',
-				text: 'Group morale deteriorates, and the death of an injured person weighs heavily on everyone due to poor resource allocation. (Happened in reality)',
+				text: ' Actively contributes by carrying items, helping others dig, and melting snow. (Did not happen)',
 				modal_text: 'Resources are better utilized, and the group feels less burdened by Bobby’s cooperation. Bobby is fatigued, but morale improves slightly as others feel supported. (Made up)',
 				morale: 1,
 				health: 0,
@@ -165,9 +165,28 @@ export const scenes: Record<number, Scene> = {
 		]
 	},
 	9: {
-		imgUrl: '/end_with_people.png',
-		text: 'The group’s cooperative efforts lead to the eventual rescue. Bobby’s willingness',
-		choices: null
+		imgUrl: '/bob_s9.png',
+		text: 'Even with rationing, food supplies are running dangerously low. The group needs a resolution and Bobby takes part in the decision-making.',
+		choices: [
+			{
+				imgUrl: '/bob_s9c1.png',
+				text: 'Bobby refuses to practice anthropophagy, and convinces the rest of the group to do the same.',
+				modal_text: 'The group hesitates too long due to the moral conflict, and their health conditions worsen. (Made up)',
+				morale: 0,
+				health: -1,
+				survivor: -1,
+				next_scene: 12
+			},
+			{
+				imgUrl: '/bob_s9c2.png',
+				text: 'Bobby is very passionate about anthropophagy and starts hoarding the human food resources.',
+				modal_text: 'Bobby’s consumes all the human flesh available and the group is left with no food, again. (Made up)',
+				morale: -1,
+				health: -1,
+				survivor: -1,
+				next_scene: 13
+			}
+		]
 	},
 	10: {
 		imgUrl: '/end_with_people.png',
@@ -177,6 +196,16 @@ export const scenes: Record<number, Scene> = {
 	11: {
 		imgUrl: '/end_with_people.png',
 		text: 'The group is rescued due to the efforts of Nando and Canessa. Bobby survives, but his efforts were not as significant. However, he is still recognized as a contributor.',
+		choices: null
+	},
+	12: {
+		imgUrl: '/end_without_people.png',
+		text: 'With no food, the group grows too weak and starvation claims everyone’s lives one by one (Made up).',
+		choices: null
+	},
+	13: {
+		imgUrl: '/end_without_people.png',
+		text: 'Bobby hoards too much human flesh and the group eventually runs out of food. Everyone dies due to starvation (Made up). ',
 		choices: null
 	},
 };
