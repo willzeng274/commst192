@@ -40,7 +40,7 @@
 	}
 
 	.placeholder {
-		color: var(--muted);
+		color: whitesmoke;
 	}
 
 	.back-link {

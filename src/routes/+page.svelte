@@ -41,6 +41,7 @@
 		font-weight: 700;
 		text-align: center;
 		margin-bottom: 2rem;
+		margin-top: 2rem;
 		line-height: 1.2;
 	}
 

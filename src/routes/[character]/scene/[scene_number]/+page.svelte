@@ -2,6 +2,14 @@
 	import { ArrowLeft, Heart, Smile, Shield } from 'lucide-svelte';
 	import { fade } from 'svelte/transition';
 	import type { Choice } from '$lib/types.js';
+	import { goto, afterNavigate } from '$app/navigation';
+	import { base } from '$app/paths'
+
+	let previousPage : string = base ;
+
+	afterNavigate(({from}) => {
+		previousPage = from?.url.pathname || previousPage
+	}) 
 
 	export let data;
 
@@ -19,8 +27,10 @@
 	<title>Scene {data.scene_number}</title>
 </svelte:head>
 
+<svelte:window on:keydown={e => (e.key === "Backspace" || e.key === "Delete" && !showDialog) ? goto(previousPage) : (e.key === ' ' || e.key === 'Enter' && showDialog) ? ((showDialog = false) || (selectedChoice && goto(`/${data.character}/scene/${selectedChoice.next_scene}`))) : data.scene.choices && ((e.key === '1') ? (handleChoiceClick(data.scene.choices[0])) : (e.key === '2') && (handleChoiceClick(data.scene.choices[1])))} />
+
 <div class="w-full m-2">
-	<button class="btn btn-ghost back-button" on:click={() => window.history.back()}>
+	<button class="btn btn-ghost back-button" on:click={() => goto(previousPage)}>
 		<ArrowLeft size={20} />
 		<span>Back</span>
 	</button>
