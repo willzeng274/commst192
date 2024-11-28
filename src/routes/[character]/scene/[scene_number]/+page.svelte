@@ -36,7 +36,7 @@
 	</button>
 
 	<div class="p-2 mt-24 w-full">
-		<img src={data.scene.imgUrl} alt="Scene" class="aspect-square max-w-[600px] mr-auto ml-auto" />
+		<img src={data.scene.imgUrl} alt="Scene" class="aspect-square w-full sm:max-w-[600px] mr-auto ml-auto" />
 		<p class="text-center text-xl">{data.scene.text}</p>
 
 		{#if data.scene.choices}
