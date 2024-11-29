@@ -109,7 +109,7 @@ export const scenes: Record<number, Scene> = {
 				imgUrl: '/carl_s5c1.png',
 				text: 'Carlitos bring up that it’s his birthday as well',
 				modal_text: 'They celebrate their birthday and it boosts their morale. (real)',
-				morale: 1,
+				morale: 131,
 				health: 1,
 				survivor: 0,
 				next_scene: 6
